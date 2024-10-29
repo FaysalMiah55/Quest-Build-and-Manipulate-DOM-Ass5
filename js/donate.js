@@ -61,10 +61,10 @@ document.getElementById("btn-donate-feni")
     });
 
 // Quata
-document.getElementById("btn-donate-quata")
+document.getElementById("btn-donate-quota")
     .addEventListener('click', function(){
         // get input amount
-        const donateAmount = getInputFieldValueById("input-amount-feni")
+        const donateAmount = getInputFieldValueById("input-amount-quota")
         // get main balance
         const balance = getTextFieldValueById("balance")
         
@@ -76,17 +76,17 @@ document.getElementById("btn-donate-quata")
             alert("Failed to Add Money");
             return;  // Stop further execution if input is not valid
         }
-        const addDonateAmount = getTextFieldValueById("addDonateFeni")
+        const addDonateAmount = getTextFieldValueById("addDonateQuota")
 
         const moneyDonate = donateAmount + addDonateAmount;
 
-        document.getElementById("addDonateFeni").innerText = moneyDonate
-        document.getElementById("input-amount-feni").value = '';
+        document.getElementById("addDonateQuota").innerText = moneyDonate
+        document.getElementById("input-amount-quota").value = '';
 
         // main balance 
         const mainBalance = balance - donateAmount
         document.getElementById("balance").innerText = mainBalance
 
         // alert("Successfully added money and updated balance.");
-        document.getElementById("my_modal_2").showModal();
+        document.getElementById("my_modal_3").showModal();
     });
