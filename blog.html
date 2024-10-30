@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- tailwind and daysiUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="container mx-auto lexend">
+    <!-- header -->
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div id="home" class="bg-[#B4F461] rounded-lg">
+                    <a class="btn btn-ghost text-sm md:text-xl">Home</a>
+                </div>
+            </div>
+            <div class="navbar-center flex gap-4">
+                <img src="assets/logo.png" alt="">
+                <h3 class="text-sm md:text-xl font-semibold">Donate Bangladesh</h3>
+            </div>
+            <div class="navbar-end flex gap-3">
+                <img src="assets/coin.png" alt="">
+                <p id="balance" class="text-sm md:text-xl font-medium opacity-70">5500</p><span>BDT</span>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <main class="mt-10">
+        <h1 class="text-4xl font-bold">Important FAQ</h1>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the importance of donations?</div>
+            <div class="collapse-content">
+                <p>Donations support charitable causes, provide relief in emergencies, and help fund community projects, education, and healthcare, creating a positive impact on society and those in need.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">Can small donations make a difference?</div>
+            <div class="collapse-content">
+                <p>Yes, small donations collectively contribute significantly. Even modest contributions help organizations sustain their efforts and reach more people in need.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">Are donations tax-deductible?</div>
+            <div class="collapse-content">
+                <p>In many countries, donations to registered charities are tax-deductible, providing financial benefits to donors while encouraging charitable giving.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">What should I consider before donating?</div>
+            <div class="collapse-content">
+                <p>Research the organization’s transparency, mission, and impact to ensure your donation supports a cause aligned with your values and is used effectively.</p>
+            </div>
+        </div>
+    </main>
+    <!-- js -->
+    <script src="js/home.js"></script>
+</body>
+</html>
