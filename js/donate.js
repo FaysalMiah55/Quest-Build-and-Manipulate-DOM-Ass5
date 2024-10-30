@@ -3,6 +3,19 @@ document.getElementById("btn-donate")
     .addEventListener('click', function(){
         // get input amount
         const donateAmount = getInputFieldValueById("input-amount-noakhali")
+        // get title
+        const title = document.getElementById("title-noakhali").innerText
+        // Get the full current date and time
+        const now = new Date();
+        const fullDateTime = now.toString(); // Full date and time
+        // add to history
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <h4 class="text-xl font-bold">${donateAmount} tk is donated for ${title} </h4>
+            <p>Date: ${fullDateTime} </p>
+        `
+        document.getElementById("history-form").appendChild(div);
+
         // get main balance
         const balance = getTextFieldValueById("balance")
         
@@ -15,6 +28,7 @@ document.getElementById("btn-donate")
             return;  // Stop further execution if input is not valid
         }
         const addDonateAmount = getTextFieldValueById("addDonateNoakhali")
+        // const addDonateAmount = getTextFieldValueById("addDonate")
 
         const moneyDonate = donateAmount + addDonateAmount;
 
@@ -34,6 +48,18 @@ document.getElementById("btn-donate-feni")
     .addEventListener('click', function(){
         // get input amount
         const donateAmount = getInputFieldValueById("input-amount-feni")
+        // get title
+        const title = document.getElementById("title-feni").innerText
+        // Get the full current date and time
+        const now = new Date();
+        const fullDateTime = now.toString(); // Full date and time
+        // add to history
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <h4 class="text-xl font-bold">${donateAmount} tk is donated for ${title} </h4>
+            <p>Date: ${fullDateTime} </p>
+        `
+        document.getElementById("history-form").appendChild(div);
         // get main balance
         const balance = getTextFieldValueById("balance")
         
@@ -60,11 +86,24 @@ document.getElementById("btn-donate-feni")
         document.getElementById("my_modal_2").showModal();
     });
 
-// Quata
+// Quata 
 document.getElementById("btn-donate-quota")
     .addEventListener('click', function(){
         // get input amount
         const donateAmount = getInputFieldValueById("input-amount-quota")
+        // get title
+        const title = document.getElementById("title-quota").innerText
+        // Get the full current date and time
+        const now = new Date();
+        const fullDateTime = now.toString(); // Full date and time
+        // add to history
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <h4 class="text-xl font-bold">${donateAmount} tk is donated for ${title} </h4>
+            <p>Date: ${fullDateTime} </p>
+        `
+        document.getElementById("history-form").appendChild(div);
+
         // get main balance
         const balance = getTextFieldValueById("balance")
         

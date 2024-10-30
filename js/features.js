@@ -12,7 +12,4 @@ document.getElementById("btn-history")
         console.log("history clicked");
         showSectionById("history-form")
         showButtonById("btn-history")
-
-        
     })
-
